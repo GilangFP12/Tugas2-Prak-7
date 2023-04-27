@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div id="kotak" 
+        style="width: 750px; 
+        height: 500px; 
+        background-image: url(Images/1.jpg); 
+        background-size: cover;"></div>
+
+        <script>
+            var gambar = 1;
+            var kotak = document.getElementById("kotak");
+            setInterval(function() {
+                if (gambar == 1) {
+                    kotak.style.backgroundImage = "url('Images/2.jpg')";
+                    gambar = 2;
+                } else if (gambar == 2) {
+                    kotak.style.backgroundImage = "url('Images/3.JPG')";
+                    gambar = 3;
+                } else if (gambar == 3) {
+                    kotak.style.backgroundImage = "url('Images/4.jpg')";
+                    gambar = 4;
+                } else if (gambar == 4) {
+                    kotak.style.backgroundImage = "url('Images/5.JPG')";
+                    gambar = 5;
+                } else {
+                    kotak.style.backgroundImage = "url('Images/1.jpg')";
+                    gambar = 1;
+                }
+            }, 4000);
+        </script>
+    </body>
+</html>
